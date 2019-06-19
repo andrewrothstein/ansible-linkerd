@@ -1,0 +1,8 @@
+---
+# vars file for linkerd
+linkerd_exe: linkerd2-cli-{{ linkerd_branch }}-{{ linkerd_ver }}-{{ linkerd_os }}{{ linkerd_suffix | default("") }}
+linkerd_url: '{{ linkerd_mirror }}/{{ linkerd_branch }}-{{ linkerd_ver }}/{{ linkerd_exe }}'
+linkerd_checksum: '{{ linkerd_checksums[linkerd_branch][linkerd_ver][linkerd_os] }}'
+
+linkerd_install_exe: '{{ linkerd_install_dir }}/{{ linkerd_exe }}'
+linkerd_link: '{{ linkerd_install_dir }}/linkerd2-cli'
