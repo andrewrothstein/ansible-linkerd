@@ -1,7 +1,7 @@
 ---
 # defaults file for linkerd
 linkerd_branch: stable
-linkerd_ver: '2.3.1'
+linkerd_ver: '2.4.0'
 linkerd_mirror: https://github.com/linkerd/linkerd2/releases/download
 linkerd_os: linux
 
@@ -14,5 +14,19 @@ linkerd_checksums:
       linux: sha256:c16f5be2fd3957ac3995a78ca3046925c5c190e832ecf028998231b732aec1e1
       # https://github.com/linkerd/linkerd2/releases/download/stable-2.3.1/linkerd2-cli-stable-2.3.1-windows.exe.sha256
       windows: sha256:ddc243d1f30c1d315e83522d02f1e552fed325b50a2e127e52f20b75534a3b9c
+    '2.3.2':
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.3.2/linkerd2-cli-stable-2.3.2-darwin.sha256
+      darwin: sha256:438e47954a1c3534cf44c1aa25d71616a7be7c38a0d42f6a3ba480f11e0ff56b
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.3.2/linkerd2-cli-stable-2.3.2-linux.sha256
+      linux: sha256:e9348623bc4b2fa16ee58f99c63bd49d54914deb765622e330bc3b5f9c4937c1
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.3.2/linkerd2-cli-stable-2.3.2-windows.exe.sha256
+      windows: sha256:9f35d81cf178bb4f2babc5cb0b05a4a1775932bfb1b399214b52b6aae85a44e4
+    '2.4.0':
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.4.0/linkerd2-cli-stable-2.4.0-darwin.sha256
+      darwin: sha256:0a516ed4d9b4dd3c6358f0e5629eddf56f6ad3280455ffbb25630a8a498d6066
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.4.0/linkerd2-cli-stable-2.4.0-linux.sha256
+      linux: sha256:464a33563b2b6c882c46bdf510971e4f8982f2ff52117b318df2abeb3d8f398d
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.4.0/linkerd2-cli-stable-2.4.0-windows.exe.sha256
+      windows: sha256:000aeef6b85574a382304338db882209a190db6fdffaad0cce48725e78f3eb12
 
 linkerd_install_dir: /usr/local/bin
