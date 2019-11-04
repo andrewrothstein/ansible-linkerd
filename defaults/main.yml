@@ -1,9 +1,12 @@
 ---
 # defaults file for linkerd
 linkerd_branch: stable
-linkerd_ver: '2.4.0'
+linkerd_ver: '2.6.0'
+
 linkerd_mirror: https://github.com/linkerd/linkerd2/releases/download
 linkerd_os: linux
+
+linkerd_install_dir: /usr/local/bin
 
 linkerd_checksums:
   stable:
@@ -28,5 +31,39 @@ linkerd_checksums:
       linux: sha256:464a33563b2b6c882c46bdf510971e4f8982f2ff52117b318df2abeb3d8f398d
       # https://github.com/linkerd/linkerd2/releases/download/stable-2.4.0/linkerd2-cli-stable-2.4.0-windows.exe.sha256
       windows: sha256:000aeef6b85574a382304338db882209a190db6fdffaad0cce48725e78f3eb12
-
-linkerd_install_dir: /usr/local/bin
+    '2.5.0':
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.5.0/linkerd2-cli-stable-2.5.0-darwin.sha256
+      darwin: sha256:2499a9b297e1edca56adad52c75082cf86f5c0b6780026e8b108dbcebe70eee8
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.5.0/linkerd2-cli-stable-2.5.0-linux.sha256
+      linux: sha256:2a4e0d3982c67a2cdd39be8c1a4de1ac2f70cba4b6888a8e57553d900432b599
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.5.0/linkerd2-cli-stable-2.5.0-windows.exe.sha256
+      windows: sha256:37529cdfa7e60f9348ffc47e070a525411f205eb969095624093fbfeb762778d
+    '2.6.0':
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.6.0/linkerd2-cli-stable-2.6.0-darwin.sha256
+      darwin: sha256:e28c82d021fb9f1891b578a16b91cd2e4230f6438d7eee0bb5c4e7523d0ee1c5
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.6.0/linkerd2-cli-stable-2.6.0-linux.sha256
+      linux: sha256:87103cda7038950e90ebba9de072f7a787ee9e9efc8066561c456f404625d7c3
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.6.0/linkerd2-cli-stable-2.6.0-windows.exe.sha256
+      windows: sha256:852ce4e7aa14caad9fa2544effa3adcf11556a0121776fb5a51afc8169744557
+  edge:
+    '19.10.3':
+      # https://github.com/linkerd/linkerd2/releases/download/edge-19.10.3/linkerd2-cli-edge-19.10.3-darwin.sha256
+      darwin: sha256:1c49945ce33fdff6d5105e4ecc4f868cbd0917c7018d3959f78dafc7d69ce686
+      # https://github.com/linkerd/linkerd2/releases/download/edge-19.10.3/linkerd2-cli-edge-19.10.3-linux.sha256
+      linux: sha256:2292268a4112c46b96b1e8d69f2f05a327137032adf4a59898b5d4a01cc5fc77
+      # https://github.com/linkerd/linkerd2/releases/download/edge-19.10.3/linkerd2-cli-edge-19.10.3-windows.exe.sha256
+      windows: sha256:ba3f969ade48d573f1b3e40299d759707f38438772b61456298ba690f08e511f
+    '19.10.4':
+      # https://github.com/linkerd/linkerd2/releases/download/edge-19.10.4/linkerd2-cli-edge-19.10.4-darwin.sha256
+      darwin: sha256:92d8d8f7b918b9d7ca5a02c52a78b0434d8720846b274b91a624ddc502224840
+      # https://github.com/linkerd/linkerd2/releases/download/edge-19.10.4/linkerd2-cli-edge-19.10.4-linux.sha256
+      linux: sha256:d5bbc52f2c443833a55a0c56ff60920d97b3331c411a4555332a15c33a4d3a7e
+      # https://github.com/linkerd/linkerd2/releases/download/edge-19.10.4/linkerd2-cli-edge-19.10.4-windows.exe.sha256
+      windows: sha256:90c991d68ceac8bf3a013aa24c3b7b2ad74214bb6eb96d234a067a27da485e74
+    '19.10.5':
+      # https://github.com/linkerd/linkerd2/releases/download/edge-19.10.5/linkerd2-cli-edge-19.10.5-darwin.sha256
+      darwin: sha256:cc856fba67689d5094324eb1eb8f1f3b40f487ce7a308b4c3e5bbd527419b005
+      # https://github.com/linkerd/linkerd2/releases/download/edge-19.10.5/linkerd2-cli-edge-19.10.5-linux.sha256
+      linux: sha256:d04a98c4151c10508f754e00aee048bfc8141e1faa6e4ab886f89cabd4ff3dc3
+      # https://github.com/linkerd/linkerd2/releases/download/edge-19.10.5/linkerd2-cli-edge-19.10.5-windows.exe.sha256
+      windows: sha256:ae0e0f23936734c38401c5581f28cf438bc1a726850b3306f13ded3af0e90a94
