@@ -24,12 +24,6 @@ dl_ver() {
 }
 
 printf "  %s:\n" stable
-#dl_ver stable 2.3.1
-#dl_ver stable 2.3.2
-#dl_ver stable 2.4.0
-#dl_ver stable 2.5.0
-dl_ver stable ${1:-2.6.0}
-#printf "  %s:\n" edge
-#dl_ver edge 19.10.3
-#dl_ver edge 19.10.4
-#dl_ver edge 19.10.5
+dl_ver stable ${1:-2.6.1}
+printf "  %s:\n" edge
+dl_ver edge 20.1.4

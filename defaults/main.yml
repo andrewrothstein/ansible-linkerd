@@ -1,7 +1,7 @@
 ---
 # defaults file for linkerd
 linkerd_branch: stable
-linkerd_ver: '2.6.0'
+linkerd_ver: '2.6.1'
 
 linkerd_mirror: https://github.com/linkerd/linkerd2/releases/download
 linkerd_os: linux
@@ -45,6 +45,13 @@ linkerd_checksums:
       linux: sha256:87103cda7038950e90ebba9de072f7a787ee9e9efc8066561c456f404625d7c3
       # https://github.com/linkerd/linkerd2/releases/download/stable-2.6.0/linkerd2-cli-stable-2.6.0-windows.exe.sha256
       windows: sha256:852ce4e7aa14caad9fa2544effa3adcf11556a0121776fb5a51afc8169744557
+    '2.6.1':
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.6.1/linkerd2-cli-stable-2.6.1-darwin.sha256
+      darwin: sha256:7ce4a2ed98f6b85ff98825eef73f7608271297fc0174078bbdb056d7fe64735a
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.6.1/linkerd2-cli-stable-2.6.1-linux.sha256
+      linux: sha256:91f9cee0d4d040df25f05e685d6b581bc207525944e37f3aaa453e846072da88
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.6.1/linkerd2-cli-stable-2.6.1-windows.exe.sha256
+      windows: sha256:4ed915b10c2a76070d40bf3223f09e742777105914acaeadfc83d99ef6cf1798
   edge:
     '19.10.3':
       # https://github.com/linkerd/linkerd2/releases/download/edge-19.10.3/linkerd2-cli-edge-19.10.3-darwin.sha256
@@ -67,3 +74,10 @@ linkerd_checksums:
       linux: sha256:d04a98c4151c10508f754e00aee048bfc8141e1faa6e4ab886f89cabd4ff3dc3
       # https://github.com/linkerd/linkerd2/releases/download/edge-19.10.5/linkerd2-cli-edge-19.10.5-windows.exe.sha256
       windows: sha256:ae0e0f23936734c38401c5581f28cf438bc1a726850b3306f13ded3af0e90a94
+    '20.1.4':
+      # https://github.com/linkerd/linkerd2/releases/download/edge-20.1.4/linkerd2-cli-edge-20.1.4-darwin.sha256
+      darwin: sha256:ca7d5b5a11882c0f8fcea2716e2d886d8b1a8bd71184f5608e14b9757509afe8
+      # https://github.com/linkerd/linkerd2/releases/download/edge-20.1.4/linkerd2-cli-edge-20.1.4-linux.sha256
+      linux: sha256:c8fa34a430911fb2bdd7f19dc1902cecc31103e8500140a673c199cffbd08b90
+      # https://github.com/linkerd/linkerd2/releases/download/edge-20.1.4/linkerd2-cli-edge-20.1.4-windows.exe.sha256
+      windows: sha256:19ec8e22c7d70c63951ae89e2ead758a138a8f794ce68a66f78dd54ae5134f70
