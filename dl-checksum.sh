@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+set -e
 #set -x
 MIRROR=https://github.com/linkerd/linkerd2/releases/download
 
@@ -10,7 +11,7 @@ dl()
     local suffix=${4:-}
     local url=$MIRROR/${branch}-${ver}/linkerd2-cli-$branch-$ver-$os$suffix.sha256
     printf "      # %s\n" $url
-    printf "      %s: sha256:%s\n" $os `curl -sSL $url | awk '{print $1}'`
+    printf "      %s: sha256:%s\n" $os $(curl -sSL $url | awk '{print $1}')
 
 }
 
@@ -19,11 +20,13 @@ dl_ver() {
     local ver=$2
     printf "    '%s':\n" $ver
     dl $branch $ver darwin
-    dl $branch $ver linux
+    dl $branch $ver linux-amd64
+    dl $branch $ver linux-arm
+    dl $branch $ver linux-arm64
     dl $branch $ver windows .exe
 }
 
 printf "  %s:\n" stable
-dl_ver stable ${1:-2.8.1}
+dl_ver stable ${1:-2.9.0}
 #printf "  %s:\n" edge
 #dl_ver edge 20.1.4
