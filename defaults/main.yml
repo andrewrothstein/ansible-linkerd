@@ -1,7 +1,7 @@
 ---
 # defaults file for linkerd
 linkerd_branch: stable
-linkerd_ver: 2.9.0
+linkerd_ver: 2.9.2
 
 linkerd_mirror: https://github.com/linkerd/linkerd2/releases/download
 linkerd_os: linux-amd64
@@ -59,6 +59,28 @@ linkerd_checksums:
       linux: sha256:23831272df6bc26be8da6d1c79563d39ae4656c608513514a1089cb1404a0540
       # https://github.com/linkerd/linkerd2/releases/download/stable-2.8.1/linkerd2-cli-stable-2.8.1-windows.exe.sha256
       windows: sha256:44a282f53fe20c1fe218bf39f48db8d0d6142dc955bdab3939a6d3a6cb709cb2
+    '2.9.0':
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.9.0/linkerd2-cli-stable-2.9.0-darwin.sha256
+      darwin: sha256:aa1ff03e96473d3d5883d9a9a7ad89e95c69ab43592928bd95668ac52757d1f6
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.9.0/linkerd2-cli-stable-2.9.0-linux-amd64.sha256
+      linux-amd64: sha256:7b40666e321926459228272f6f4b9dc6cf93e6da94a94cf2d6e3e4b69e5b8dc4
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.9.0/linkerd2-cli-stable-2.9.0-linux-arm.sha256
+      linux-arm: sha256:191ac2848c2f5182ad7e6555d6020db4f1dc96724af72456b39bbf6616aa3b4b
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.9.0/linkerd2-cli-stable-2.9.0-linux-arm64.sha256
+      linux-arm64: sha256:1400a6dbb01b7742661e8224f28b53979d9402783be2f00368ff4b89fdb4f35e
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.9.0/linkerd2-cli-stable-2.9.0-windows.exe.sha256
+      windows: sha256:258cf0310f9ed62f17280a9adeb8911d9138729b25b513c5cd3bd8798e995369
+    '2.9.2':
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.9.2/linkerd2-cli-stable-2.9.2-darwin.sha256
+      darwin: sha256:625d46eef585a6ee8ffb6c0fd1a68d71a039238a48ae2c36dac6a2a72b9a5e6e
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.9.2/linkerd2-cli-stable-2.9.2-linux-amd64.sha256
+      linux-amd64: sha256:67e51106600fe48315659e9e3261efd0169e6bb229ceb8d96af0eabd159624ef
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.9.2/linkerd2-cli-stable-2.9.2-linux-arm.sha256
+      linux-arm: sha256:20996bd6e27fc0bd1f3535cade03b3dd166d5c2258e6b51045802f8b4d65038f
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.9.2/linkerd2-cli-stable-2.9.2-linux-arm64.sha256
+      linux-arm64: sha256:2ecf24937ddb35979aa93d5d2c5c45740ec099b6e75183fa6431674cfacd15cd
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.9.2/linkerd2-cli-stable-2.9.2-windows.exe.sha256
+      windows: sha256:895e4075d15b6cbe3b0f4c76b8ab06aa63ed5ecd01220bca908b67575398d742
   edge:
     '19.10.3':
       # https://github.com/linkerd/linkerd2/releases/download/edge-19.10.3/linkerd2-cli-edge-19.10.3-darwin.sha256
@@ -88,15 +110,3 @@ linkerd_checksums:
       linux: sha256:c8fa34a430911fb2bdd7f19dc1902cecc31103e8500140a673c199cffbd08b90
       # https://github.com/linkerd/linkerd2/releases/download/edge-20.1.4/linkerd2-cli-edge-20.1.4-windows.exe.sha256
       windows: sha256:19ec8e22c7d70c63951ae89e2ead758a138a8f794ce68a66f78dd54ae5134f70
-  stable:
-    '2.9.0':
-      # https://github.com/linkerd/linkerd2/releases/download/stable-2.9.0/linkerd2-cli-stable-2.9.0-darwin.sha256
-      darwin: sha256:aa1ff03e96473d3d5883d9a9a7ad89e95c69ab43592928bd95668ac52757d1f6
-      # https://github.com/linkerd/linkerd2/releases/download/stable-2.9.0/linkerd2-cli-stable-2.9.0-linux-amd64.sha256
-      linux-amd64: sha256:7b40666e321926459228272f6f4b9dc6cf93e6da94a94cf2d6e3e4b69e5b8dc4
-      # https://github.com/linkerd/linkerd2/releases/download/stable-2.9.0/linkerd2-cli-stable-2.9.0-linux-arm.sha256
-      linux-arm: sha256:191ac2848c2f5182ad7e6555d6020db4f1dc96724af72456b39bbf6616aa3b4b
-      # https://github.com/linkerd/linkerd2/releases/download/stable-2.9.0/linkerd2-cli-stable-2.9.0-linux-arm64.sha256
-      linux-arm64: sha256:1400a6dbb01b7742661e8224f28b53979d9402783be2f00368ff4b89fdb4f35e
-      # https://github.com/linkerd/linkerd2/releases/download/stable-2.9.0/linkerd2-cli-stable-2.9.0-windows.exe.sha256
-      windows: sha256:258cf0310f9ed62f17280a9adeb8911d9138729b25b513c5cd3bd8798e995369
