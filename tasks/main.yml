@@ -10,7 +10,7 @@
       paths:
         - '{{ role_path }}/vars'
 - name: downloading {{ linkerd_url }} to {{ linkerd_install_exe }}
-  become: yes
+  become: true
   become_user: root
   get_url:
     url: '{{ linkerd_url }}'
@@ -18,7 +18,7 @@
     mode: 0755
     checksum: '{{ linkerd_checksum }}'
 - name: linking {{ linkerd_link }} to {{ linkerd_install_exe }}
-  become: yes
+  become: true
   become_user: root
   file:
     src: '{{ linkerd_install_exe }}'
