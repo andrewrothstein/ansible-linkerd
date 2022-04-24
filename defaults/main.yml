@@ -1,7 +1,7 @@
 ---
 # defaults file for linkerd
 linkerd_branch: stable
-linkerd_ver: 2.11.1
+linkerd_ver: 2.11.2
 
 linkerd_mirror: https://github.com/linkerd/linkerd2/releases/download
 linkerd_os: linux-amd64
@@ -114,6 +114,28 @@ linkerd_checksums:
       linux-arm64: sha256:0d071aefc23338acba3983af5515e68ac4bb3c70c5000e539bc4c27f7301cde0
       # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.0/linkerd2-cli-stable-2.11.0-windows.exe.sha256
       windows: sha256:554382ee92051ed197f2d05f4e4f394a573180b8d755b9922992780c1ca110ba
+    '2.11.1':
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.1/linkerd2-cli-stable-2.11.1-darwin.sha256
+      darwin: sha256:e9ac25f37785b30784c768ad7d2d276fa1595b2fbbafe1e4f4fe42da96427c01
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.1/linkerd2-cli-stable-2.11.1-linux-amd64.sha256
+      linux-amd64: sha256:96c08570b6f6ad40ef1e6aa970959c9c5541e36c85477ee9843b85b8fdcc54ea
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.1/linkerd2-cli-stable-2.11.1-linux-arm.sha256
+      linux-arm: sha256:33837ccca93f7d34617509aebb7f09e30c337578e39b72976d3f5bfc732663d5
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.1/linkerd2-cli-stable-2.11.1-linux-arm64.sha256
+      linux-arm64: sha256:50fb91d5eb05eb37a464270e836de24fb3bd13d7c1acb285f3a392fdf3313caa
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.1/linkerd2-cli-stable-2.11.1-windows.exe.sha256
+      windows: sha256:c21a37cde3ecc62c7a06ac87d8bb8fe3f50fa0e6c90746d1b8ee8f10572c93c8
+    '2.11.2':
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.2/linkerd2-cli-stable-2.11.2-darwin.sha256
+      darwin: sha256:568d05d1134323593ed776be87f3d0980bf53660c11283c2af42af42d3500b34
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.2/linkerd2-cli-stable-2.11.2-linux-amd64.sha256
+      linux-amd64: sha256:269d2f1ca468ac67f05bcfeb3524e8203dbc003643a4b003d1001acfc17ff7d9
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.2/linkerd2-cli-stable-2.11.2-linux-arm.sha256
+      linux-arm: sha256:5c0346b298c3f989b425e54f48dd13ef2d83f241abc1a88f7e415d4f1f15fcef
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.2/linkerd2-cli-stable-2.11.2-linux-arm64.sha256
+      linux-arm64: sha256:5f596a0bb1aaa8fc0c3e7bcf442d242cf06817951dcc47ac022b819b20ae411e
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.2/linkerd2-cli-stable-2.11.2-windows.exe.sha256
+      windows: sha256:3092f1ff90b453e9fc8ea7c71aaeed4ac0dbf32035bd00664d79ffcd84a19435
   edge:
     '19.10.3':
       # https://github.com/linkerd/linkerd2/releases/download/edge-19.10.3/linkerd2-cli-edge-19.10.3-darwin.sha256
@@ -143,15 +165,3 @@ linkerd_checksums:
       linux: sha256:c8fa34a430911fb2bdd7f19dc1902cecc31103e8500140a673c199cffbd08b90
       # https://github.com/linkerd/linkerd2/releases/download/edge-20.1.4/linkerd2-cli-edge-20.1.4-windows.exe.sha256
       windows: sha256:19ec8e22c7d70c63951ae89e2ead758a138a8f794ce68a66f78dd54ae5134f70
-  stable:
-    '2.11.1':
-      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.1/linkerd2-cli-stable-2.11.1-darwin.sha256
-      darwin: sha256:e9ac25f37785b30784c768ad7d2d276fa1595b2fbbafe1e4f4fe42da96427c01
-      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.1/linkerd2-cli-stable-2.11.1-linux-amd64.sha256
-      linux-amd64: sha256:96c08570b6f6ad40ef1e6aa970959c9c5541e36c85477ee9843b85b8fdcc54ea
-      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.1/linkerd2-cli-stable-2.11.1-linux-arm.sha256
-      linux-arm: sha256:33837ccca93f7d34617509aebb7f09e30c337578e39b72976d3f5bfc732663d5
-      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.1/linkerd2-cli-stable-2.11.1-linux-arm64.sha256
-      linux-arm64: sha256:50fb91d5eb05eb37a464270e836de24fb3bd13d7c1acb285f3a392fdf3313caa
-      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.1/linkerd2-cli-stable-2.11.1-windows.exe.sha256
-      windows: sha256:c21a37cde3ecc62c7a06ac87d8bb8fe3f50fa0e6c90746d1b8ee8f10572c93c8

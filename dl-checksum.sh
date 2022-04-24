@@ -11,8 +11,7 @@ dl()
     local suffix=${4:-}
     local url=$MIRROR/${branch}-${ver}/linkerd2-cli-$branch-$ver-$os$suffix.sha256
     printf "      # %s\n" $url
-    printf "      %s: sha256:%s\n" $os $(curl -sSL $url | awk '{print $1}')
-
+    printf "      %s: sha256:%s\n" $os $(curl -sSLf $url | awk '{print $1}')
 }
 
 dl_ver() {
@@ -27,6 +26,6 @@ dl_ver() {
 }
 
 printf "  %s:\n" stable
-dl_ver stable ${1:-2.11.1}
+dl_ver stable ${1:-2.11.2}
 #printf "  %s:\n" edge
 #dl_ver edge 20.1.4
