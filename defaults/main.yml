@@ -1,7 +1,7 @@
 ---
 # defaults file for linkerd
 linkerd_branch: stable
-linkerd_ver: 2.11.2
+linkerd_ver: 2.11.4
 
 linkerd_mirror: https://github.com/linkerd/linkerd2/releases/download
 linkerd_os: linux-amd64
@@ -136,6 +136,28 @@ linkerd_checksums:
       linux-arm64: sha256:5f596a0bb1aaa8fc0c3e7bcf442d242cf06817951dcc47ac022b819b20ae411e
       # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.2/linkerd2-cli-stable-2.11.2-windows.exe.sha256
       windows: sha256:3092f1ff90b453e9fc8ea7c71aaeed4ac0dbf32035bd00664d79ffcd84a19435
+    '2.11.3':
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.3/linkerd2-cli-stable-2.11.3-darwin.sha256
+      darwin: sha256:6d485fbdd12b89cc4e08b84b2ec22f011f2e7fc4b1ce1d9ee1eea7f90eb0dd3d
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.3/linkerd2-cli-stable-2.11.3-linux-amd64.sha256
+      linux-amd64: sha256:2a9ff195aae97c5a7ce938d106b4210f7a485764dd2ee118e0dad1bd569fc00f
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.3/linkerd2-cli-stable-2.11.3-linux-arm.sha256
+      linux-arm: sha256:dc63951c2b0028ca4df3c992973e432b31d28fec7376e3b892593eee45d864d4
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.3/linkerd2-cli-stable-2.11.3-linux-arm64.sha256
+      linux-arm64: sha256:3a2545f8384004b397b9f792726489f181d3dd4d756ee9414e4a61650bdab0b1
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.3/linkerd2-cli-stable-2.11.3-windows.exe.sha256
+      windows: sha256:61446ab51b74f7fa47a6c4670ea95542ab0372d4186c2b5ae82ddf2f3f797c38
+    '2.11.4':
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.4/linkerd2-cli-stable-2.11.4-darwin.sha256
+      darwin: sha256:86bdd10485c577a0f9d3e321f74a9957e14357b04df923f716914a89e61c25b5
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.4/linkerd2-cli-stable-2.11.4-linux-amd64.sha256
+      linux-amd64: sha256:bf8075489353f050d5839c7674f8d1f9dd98a8ede6bb3a77b5942859722b6d15
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.4/linkerd2-cli-stable-2.11.4-linux-arm.sha256
+      linux-arm: sha256:f555244f872999d832ceee19a8b63f50c6df304e38f299258e0de3c6c90d7606
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.4/linkerd2-cli-stable-2.11.4-linux-arm64.sha256
+      linux-arm64: sha256:d0435b00e5083a25c8e3488843fae61dd239af1283b509fa803cd843340f6367
+      # https://github.com/linkerd/linkerd2/releases/download/stable-2.11.4/linkerd2-cli-stable-2.11.4-windows.exe.sha256
+      windows: sha256:4e373aaf149060c28b9891f4c8728b3cd90e86b9d505de8d431bed6e1801d1e0
   edge:
     '19.10.3':
       # https://github.com/linkerd/linkerd2/releases/download/edge-19.10.3/linkerd2-cli-edge-19.10.3-darwin.sha256
