@@ -1,8 +1,12 @@
 ---
 # vars file for linkerd
-linkerd_exe: linkerd2-cli-{{ linkerd_branch }}-{{ linkerd_ver }}-{{ linkerd_os }}{{ linkerd_suffix | default("") }}
+linkerd_os: '{{ ansible_system | lower }}'
+linkerd_arch: '{{ linkerd_arch_map[ansible_architecture] }}'
+linkerd_platform: '{{ linkerd_os }}-{{ linkerd_arch }}'
+linkerd_infix: '{% if linkerd_arch == "amd64" and linkerd_os == "darwin" or linkerd_os == "windows" %}{{ linkerd_os }}{% else %}{{ linkerd_platform }}{% endif %}'
+linkerd_exe: linkerd2-cli-{{ linkerd_branch }}-{{ linkerd_ver }}-{{ linkerd_infix }}{{ linkerd_suffix | default("") }}
 linkerd_url: '{{ linkerd_mirror }}/{{ linkerd_branch }}-{{ linkerd_ver }}/{{ linkerd_exe }}'
-linkerd_checksum: '{{ linkerd_checksums[linkerd_branch][linkerd_ver][linkerd_os] }}'
+linkerd_checksum: '{{ linkerd_checksums[linkerd_branch][linkerd_ver][linkerd_platform] }}'
 
 linkerd_install_exe: '{{ linkerd_install_dir }}/{{ linkerd_exe }}'
 linkerd_link: '{{ linkerd_install_dir }}/linkerd2-cli'
