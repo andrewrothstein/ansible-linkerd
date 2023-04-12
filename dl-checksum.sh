@@ -33,7 +33,7 @@ dl_ver() {
     dl $branch $ver windows amd64 .exe
 }
 
-printf "  %s:\n" stable
-dl_ver stable ${1:-2.12.4}
+#printf "  %s:\n" stable
+dl_ver stable ${1:-2.13.0}
 #printf "  %s:\n" edge
 #dl_ver edge 20.1.4
