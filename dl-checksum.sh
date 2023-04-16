@@ -34,6 +34,6 @@ dl_ver() {
 }
 
 #printf "  %s:\n" stable
-dl_ver stable ${1:-2.13.0}
+dl_ver stable ${1:-2.13.1}
 #printf "  %s:\n" edge
 #dl_ver edge 20.1.4
